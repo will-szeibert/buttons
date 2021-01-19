@@ -13,7 +13,9 @@ button{
     margin:1rem;
     background:none;
     border:none;
-    
+    width:5rem;
+    height:2rem;
+    text-align: center;
 }
 
 button:active{
@@ -43,4 +45,45 @@ button:active{
 
 .a2:hover{
     outline-offset:-6px;
+}
+
+.a3{
+    color:rgb(248, 172, 172);
+    border:2px solid rgb(248, 172, 172);
+    outline:2px solid rgb(248, 172, 172);
+    outline-offset: -2px;
+    transition:outline-offset 250ms ease,outline-width 250ms ease;
+   
+}
+
+.a3:hover{
+    outline-offset: -6px ;
+    outline-width: 6px
+}
+
+.a4{
+    border:2px solid rgb(187, 248, 172);
+    background:rgb(248, 172, 172);
+    border-radius:6px;
+    position:relative;
+    z-index:1;
+}
+
+.a4::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:100%;
+    bottom:0;
+    top:0;
+    background:rgb(187, 248, 172);
+    z-index:-1;
+    transition:250ms ease;
+}
+
+
+.a4:hover::before{
+    transition:250ms ease;
+    right:0;
+
 }
