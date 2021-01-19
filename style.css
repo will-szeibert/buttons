@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin:1rem;
+}
+
+button{
+    padding:0.5em 1.5em;
+    margin:1rem;
+    background:none;
+    border:none;
+    
+}
+
+button:active{
+    color:black;
+}
+
+.a1{
+    border:2px solid black;
+    outline:2px solid black;
+    outline-offset: -2px;
+    transition:outline-offset 250ms ease;
+}
+
+.a1:hover{
+    outline-offset:-6px; 
+    /* change offset to positive to make it bigger than border */
+}
+
+.a2{
+    color:white;
+    background:rgb(248, 172, 172);
+    border:2px solid rgb(248, 172, 172);
+    outline:2px solid white;
+    outline-offset: -2px;
+    transition:outline-offset 250ms ease;
+}
+
+.a2:hover{
+    outline-offset:-6px;
+}
