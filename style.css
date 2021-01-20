@@ -85,5 +85,154 @@ button:active{
 .a4:hover::before{
     transition:250ms ease;
     right:0;
+}
 
+.a5{
+    background:rgb(203, 252, 154);
+    position:relative;
+    z-index:1;
+}
+
+.a5::after{
+    content:"";
+    position:absolute;
+    left:0;
+    height:10px;
+    width:100%;
+    height:100%;
+    top:0;
+    background:rgb(243, 210, 79);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 250ms ease-out;
+    z-index: -1;
+}
+
+.a5:hover::after{
+    transform:scaleX(1);
+}
+
+.a6{
+    background:rgb(203, 252, 154);
+    position:relative;
+    z-index:1;
+}
+
+.a6::after{
+    content:"";
+    background:rgb(243, 210, 79);
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    transform:scaleY(0);
+    transform-origin:top;
+    transition:transform 300ms ease;
+    z-index:-1;
+}
+
+.a6:hover::after{
+    transform:scaleY(1);
+}
+
+.a7{
+    background:rgb(203, 252, 154);
+    position:relative;
+    z-index:1;
+}
+
+.a7::after{
+    content:"";
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transform:scale(0,0);
+    transform-origin: center;
+    transition:transform 300ms ease;
+    background:rgb(243, 210, 79);
+    z-index:-1;
+}
+
+.a7:hover::after{
+    transform:scale(1,1);
+}
+
+.a8{
+    background:rgb(243, 210, 79);
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+.a8::after{
+    content:"";
+    background:rgb(203, 252, 154);
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    transform:scale(1.5);
+    transform-origin:center;;
+    transition:transform 300ms ease;
+    border-radius:50%;
+    position:absolute;
+    z-index:-1;
+}
+
+.a8:hover::after{
+    transform:scale(0);
+}
+
+.a9{
+    background:rgb(243, 210, 79);
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+.a9::after{
+    content:"";
+    background:rgb(203, 252, 154);
+    width:110%;
+    height:100%;
+    left:-5%;
+    top:0;
+    transform:scaleY(1.5);
+    transform-origin:top;;
+    transition:transform 300ms ease;
+    border-radius:0 0 50% 50%;
+    position:absolute;
+    z-index:-1;
+}
+
+.a9:hover::after{
+    transform:scaleY(0);
+}
+
+.a10{
+    background:rgb(243, 210, 79);
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+}
+
+.a10::after{
+    content:"";
+    background:rgb(203, 252, 154);
+    position:absolute;
+    bottom:0;
+    left:-5%;
+    height:150%;
+    width:110%;
+    border-radius:50% 50% 0 0;
+    transform-origin:bottom;
+    transition:transform 300ms ease;
+    z-index:-1;
+}
+
+.a10:hover::after{
+    transform:scaleY(0);
 }
