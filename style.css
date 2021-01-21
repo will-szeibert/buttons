@@ -236,3 +236,30 @@ button:active{
 .a10:hover::after{
     transform:scaleY(0);
 }
+
+.a11{
+   background: #ffc312;
+   position:relative;
+    overflow: hidden;
+   z-index:1;
+}
+
+.a11::after{
+    content:"";
+    background:linear-gradient(to right, #ffc312,#fc9826, #ffc312);
+   
+    position:absolute;
+    bottom:0;
+    height:100%;
+    left:-50%;
+    width:100%;
+    
+    transform-origin:center;
+    transition:transform 600ms ease;
+    z-index:-1;
+}
+
+.a11:hover::after{
+    transform:translateX(90%);
+}
+
