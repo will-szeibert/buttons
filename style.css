@@ -389,17 +389,18 @@ display:inline-block;}/*for buttons that change size, they don't afftect other b
     color:white;
     border-radius:10px;
     box-shadow:2px 4px 3px 1px rgba(0,0,0,0.4);
-    width:200px;
-    height:100px; 
     transition:all 100ms ease;
+    padding:4rem;
+    margin-left:2rem
+
 }
 
 .a14:active{
     box-shadow:1px 2px 1px 0px rgba(0,0,0,0.8);
     background:rgb(194, 93, 21);
-    height:95px;
-    width:190px;
     color:white;
+    padding:3.9rem;
+    margin-left:2.1rem;
 }
 
 
@@ -448,6 +449,52 @@ display:inline-block;}/*for buttons that change size, they don't afftect other b
 
 .a15:hover::after{
     transform:scaleX(0);
+}
+
+.a16{
+    background:rgb(236, 236, 236);
+    color:rgb(236, 236, 236);/* because text has padding and it'll change the button position */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+    border-radius:25px;
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+}
+
+.a16::before{
+    content:"";
+    height:26px;
+    width:26px;
+    top:3px;
+    left:3px;
+    background:white;
+    position:absolute;
+    border-radius:50%;
+    transform-origin:left;
+    transform:translateX(0);
+    transition:all 100ms ease;
+    z-index:1;
+}
+
+.a16::after{
+    content:"";
+    background:rgb(54, 212, 39);
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0%;
+    transform:translateX(-100%);
+    z-index:-1;
+}
+
+.a16:active::before{
+    transform:translateX(48px);
+    transition:all 100ms ease;
+}
+
+.a16:active::after{
+    transform:translateX(0);
 }
 
 
